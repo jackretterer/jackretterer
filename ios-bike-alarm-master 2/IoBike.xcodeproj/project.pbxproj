@@ -1,0 +1,721 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		520484A024635DB700E2E35F /* StateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5204849F24635DB700E2E35F /* StateView.swift */; };
+		520484A42463836000E2E35F /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520484A32463836000E2E35F /* Device.swift */; };
+		527952BD2416D3ED00A82F63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527952BC2416D3ED00A82F63 /* AppDelegate.swift */; };
+		527952BF2416D3ED00A82F63 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527952BE2416D3ED00A82F63 /* SceneDelegate.swift */; };
+		527952C12416D3ED00A82F63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527952C02416D3ED00A82F63 /* ContentView.swift */; };
+		527952C32416D3F700A82F63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 527952C22416D3F700A82F63 /* Assets.xcassets */; };
+		527952C62416D3F700A82F63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 527952C52416D3F700A82F63 /* Preview Assets.xcassets */; };
+		527952C92416D3F700A82F63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 527952C72416D3F700A82F63 /* LaunchScreen.storyboard */; };
+		527952D32416FE2D00A82F63 /* BLEConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527952D22416FE2D00A82F63 /* BLEConnectionManager.swift */; };
+		527952DB24170D5800A82F63 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527952DA24170D5800A82F63 /* MapView.swift */; };
+		527952DD241712F100A82F63 /* ToggleAlarmButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527952DC241712F100A82F63 /* ToggleAlarmButton.swift */; };
+		529E45EE2466563B00430C08 /* QRCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E45ED2466563B00430C08 /* QRCaptureView.swift */; };
+		52AE73D52460C563005DE8AD /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AE73D42460C563005DE8AD /* ModalView.swift */; };
+		52D1D762245FB4B1003E2E00 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D1D761245FB4B1003E2E00 /* Utils.swift */; };
+		52D1D764245FB994003E2E00 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D1D763245FB994003E2E00 /* SettingsView.swift */; };
+		52D1D766245FC31E003E2E00 /* SettingsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D1D765245FC31E003E2E00 /* SettingsRow.swift */; };
+		52E2E953246B1E72003D6CA7 /* QRScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E2E952246B1E72003D6CA7 /* QRScanView.swift */; };
+		52E2E955246B6442003D6CA7 /* BikeRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E2E954246B6442003D6CA7 /* BikeRegistrationView.swift */; };
+		52E2E959246B6A59003D6CA7 /* QRScanSuccessfulView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E2E958246B6A59003D6CA7 /* QRScanSuccessfulView.swift */; };
+		52E2E95E246B989B003D6CA7 /* UserDefaultsBackedDeviceStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E2E95D246B989B003D6CA7 /* UserDefaultsBackedDeviceStorage.swift */; };
+		52E2E964246C4646003D6CA7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E2E963246C4646003D6CA7 /* MainView.swift */; };
+		52E2E966246C4E28003D6CA7 /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E2E965246C4E28003D6CA7 /* OnBoardingView.swift */; };
+		52E2E968246C79BF003D6CA7 /* InitialQRScanSuccessfulView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E2E967246C79BF003D6CA7 /* InitialQRScanSuccessfulView.swift */; };
+		52E2E96A246C7A02003D6CA7 /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E2E969246C7A02003D6CA7 /* SuccessView.swift */; };
+		BB13E47BF659D8AB35664C6D /* Pods_IoBike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51882929A058DD6B71FDE2CF /* Pods_IoBike.framework */; };
+		FF5CD176247483FD0090616E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF5CD175247483FD0090616E /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF36A69E24747B5C0049F656 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF36A68B24747B5C0049F656 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E2B63D462DB7F827C4B11FD51E4F8E2D;
+			remoteInfo = FirebaseCore;
+		};
+		FF36A6A024747B5C0049F656 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF36A68B24747B5C0049F656 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8CC9178C366942FD6FF6A115604EAD58;
+			remoteInfo = FirebaseCoreDiagnostics;
+		};
+		FF36A6A224747B5C0049F656 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF36A68B24747B5C0049F656 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 51671C73F008B5C0C3751B3855999213;
+			remoteInfo = FirebaseDatabase;
+		};
+		FF36A6A424747B5C0049F656 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF36A68B24747B5C0049F656 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 13C8C8B254851998F9289F71229B28A2;
+			remoteInfo = FirebaseInstallations;
+		};
+		FF36A6A624747B5C0049F656 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF36A68B24747B5C0049F656 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 856B5CD56F194FAD26EA91620B66D614;
+			remoteInfo = GoogleDataTransport;
+		};
+		FF36A6A824747B5C0049F656 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF36A68B24747B5C0049F656 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6942351307BC1F54575D9853307EAE0E;
+			remoteInfo = GoogleDataTransportCCTSupport;
+		};
+		FF36A6AA24747B5C0049F656 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF36A68B24747B5C0049F656 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B43874C6CBB50E7134FBEC24BABFE14F;
+			remoteInfo = GoogleUtilities;
+		};
+		FF36A6AC24747B5C0049F656 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF36A68B24747B5C0049F656 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A9F46A999C47653013D3AD854352507;
+			remoteInfo = "leveldb-library";
+		};
+		FF36A6AE24747B5C0049F656 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF36A68B24747B5C0049F656 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06FC5C9CF96D60C50FCD47D339C91951;
+			remoteInfo = nanopb;
+		};
+		FF36A6B024747B5C0049F656 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF36A68B24747B5C0049F656 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2C7F86E1025CAF81CD51F0C8849658B0;
+			remoteInfo = "Pods-IoBike";
+		};
+		FF36A6B224747B5C0049F656 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF36A68B24747B5C0049F656 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3347A1AB6546F0A3977529B8F199DC41;
+			remoteInfo = PromisesObjC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		51882929A058DD6B71FDE2CF /* Pods_IoBike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IoBike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5204849F24635DB700E2E35F /* StateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateView.swift; sourceTree = "<group>"; };
+		520484A32463836000E2E35F /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		527952B92416D3ED00A82F63 /* IoBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IoBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		527952BC2416D3ED00A82F63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		527952BE2416D3ED00A82F63 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		527952C02416D3ED00A82F63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		527952C22416D3F700A82F63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		527952C52416D3F700A82F63 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		527952C82416D3F700A82F63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		527952CA2416D3F700A82F63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		527952D22416FE2D00A82F63 /* BLEConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEConnectionManager.swift; sourceTree = "<group>"; };
+		527952DA24170D5800A82F63 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		527952DC241712F100A82F63 /* ToggleAlarmButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleAlarmButton.swift; sourceTree = "<group>"; };
+		529E45ED2466563B00430C08 /* QRCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCaptureView.swift; sourceTree = "<group>"; };
+		52AE73D42460C563005DE8AD /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		52D1D761245FB4B1003E2E00 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		52D1D763245FB994003E2E00 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		52D1D765245FC31E003E2E00 /* SettingsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRow.swift; sourceTree = "<group>"; };
+		52E2E952246B1E72003D6CA7 /* QRScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanView.swift; sourceTree = "<group>"; };
+		52E2E954246B6442003D6CA7 /* BikeRegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeRegistrationView.swift; sourceTree = "<group>"; };
+		52E2E958246B6A59003D6CA7 /* QRScanSuccessfulView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanSuccessfulView.swift; sourceTree = "<group>"; };
+		52E2E95D246B989B003D6CA7 /* UserDefaultsBackedDeviceStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsBackedDeviceStorage.swift; sourceTree = "<group>"; };
+		52E2E963246C4646003D6CA7 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		52E2E965246C4E28003D6CA7 /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
+		52E2E967246C79BF003D6CA7 /* InitialQRScanSuccessfulView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialQRScanSuccessfulView.swift; sourceTree = "<group>"; };
+		52E2E969246C7A02003D6CA7 /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
+		615202315CB91C49EB4C53A9 /* Pods-IoBike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IoBike.debug.xcconfig"; path = "Target Support Files/Pods-IoBike/Pods-IoBike.debug.xcconfig"; sourceTree = "<group>"; };
+		7F47CDEFCF5CE2D49523030D /* Pods-IoBike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IoBike.release.xcconfig"; path = "Target Support Files/Pods-IoBike/Pods-IoBike.release.xcconfig"; sourceTree = "<group>"; };
+		FF36A68B24747B5C0049F656 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = ../BikeBuddy/Pods/Pods.xcodeproj; sourceTree = "<group>"; };
+		FF5CD175247483FD0090616E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		527952B62416D3ED00A82F63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB13E47BF659D8AB35664C6D /* Pods_IoBike.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D9FD972B1880398542649D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				615202315CB91C49EB4C53A9 /* Pods-IoBike.debug.xcconfig */,
+				7F47CDEFCF5CE2D49523030D /* Pods-IoBike.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		527952B02416D3ED00A82F63 = {
+			isa = PBXGroup;
+			children = (
+				527952BB2416D3ED00A82F63 /* IoBike */,
+				527952BA2416D3ED00A82F63 /* Products */,
+				CF0195F27AA7CD0973D5F8EB /* Frameworks */,
+				0D9FD972B1880398542649D2 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		527952BA2416D3ED00A82F63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				527952B92416D3ED00A82F63 /* IoBike.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		527952BB2416D3ED00A82F63 /* IoBike */ = {
+			isa = PBXGroup;
+			children = (
+				FF5CD175247483FD0090616E /* GoogleService-Info.plist */,
+				527952CA2416D3F700A82F63 /* Info.plist */,
+				527952BC2416D3ED00A82F63 /* AppDelegate.swift */,
+				527952C02416D3ED00A82F63 /* ContentView.swift */,
+				527952BE2416D3ED00A82F63 /* SceneDelegate.swift */,
+				52D1D761245FB4B1003E2E00 /* Utils.swift */,
+				527952C22416D3F700A82F63 /* Assets.xcassets */,
+				527952C72416D3F700A82F63 /* LaunchScreen.storyboard */,
+				527952E0241738E600A82F63 /* Model */,
+				527952C42416D3F700A82F63 /* Preview Content */,
+				527952D7241705E700A82F63 /* SupportingViews */,
+			);
+			path = IoBike;
+			sourceTree = "<group>";
+		};
+		527952C42416D3F700A82F63 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				527952C52416D3F700A82F63 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		527952D7241705E700A82F63 /* SupportingViews */ = {
+			isa = PBXGroup;
+			children = (
+				52E2E95C246B8EB0003D6CA7 /* StateViews */,
+				52E2E95B246B8E79003D6CA7 /* SettingsViews */,
+				52E2E95A246B8E4D003D6CA7 /* BikeRegistrationViews */,
+				52AE73D42460C563005DE8AD /* ModalView.swift */,
+				527952DA24170D5800A82F63 /* MapView.swift */,
+				52E2E963246C4646003D6CA7 /* MainView.swift */,
+				52E2E965246C4E28003D6CA7 /* OnBoardingView.swift */,
+			);
+			path = SupportingViews;
+			sourceTree = "<group>";
+		};
+		527952E0241738E600A82F63 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				527952D22416FE2D00A82F63 /* BLEConnectionManager.swift */,
+				520484A32463836000E2E35F /* Device.swift */,
+				52E2E95D246B989B003D6CA7 /* UserDefaultsBackedDeviceStorage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52E2E95A246B8E4D003D6CA7 /* BikeRegistrationViews */ = {
+			isa = PBXGroup;
+			children = (
+				529E45ED2466563B00430C08 /* QRCaptureView.swift */,
+				52E2E952246B1E72003D6CA7 /* QRScanView.swift */,
+				52E2E958246B6A59003D6CA7 /* QRScanSuccessfulView.swift */,
+				52E2E967246C79BF003D6CA7 /* InitialQRScanSuccessfulView.swift */,
+				52E2E954246B6442003D6CA7 /* BikeRegistrationView.swift */,
+				52E2E969246C7A02003D6CA7 /* SuccessView.swift */,
+			);
+			path = BikeRegistrationViews;
+			sourceTree = "<group>";
+		};
+		52E2E95B246B8E79003D6CA7 /* SettingsViews */ = {
+			isa = PBXGroup;
+			children = (
+				52D1D763245FB994003E2E00 /* SettingsView.swift */,
+				52D1D765245FC31E003E2E00 /* SettingsRow.swift */,
+			);
+			path = SettingsViews;
+			sourceTree = "<group>";
+		};
+		52E2E95C246B8EB0003D6CA7 /* StateViews */ = {
+			isa = PBXGroup;
+			children = (
+				5204849F24635DB700E2E35F /* StateView.swift */,
+				527952DC241712F100A82F63 /* ToggleAlarmButton.swift */,
+			);
+			path = StateViews;
+			sourceTree = "<group>";
+		};
+		CF0195F27AA7CD0973D5F8EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF36A68B24747B5C0049F656 /* Pods.xcodeproj */,
+				51882929A058DD6B71FDE2CF /* Pods_IoBike.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF36A68C24747B5C0049F656 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF36A69F24747B5C0049F656 /* FirebaseCore.framework */,
+				FF36A6A124747B5C0049F656 /* FirebaseCoreDiagnostics.framework */,
+				FF36A6A324747B5C0049F656 /* FirebaseDatabase.framework */,
+				FF36A6A524747B5C0049F656 /* FirebaseInstallations.framework */,
+				FF36A6A724747B5C0049F656 /* GoogleDataTransport.framework */,
+				FF36A6A924747B5C0049F656 /* GoogleDataTransportCCTSupport.framework */,
+				FF36A6AB24747B5C0049F656 /* GoogleUtilities.framework */,
+				FF36A6AD24747B5C0049F656 /* leveldb.framework */,
+				FF36A6AF24747B5C0049F656 /* nanopb.framework */,
+				FF36A6B124747B5C0049F656 /* Pods_IoBike.framework */,
+				FF36A6B324747B5C0049F656 /* FBLPromises.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		527952B82416D3ED00A82F63 /* IoBike */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 527952CD2416D3F700A82F63 /* Build configuration list for PBXNativeTarget "IoBike" */;
+			buildPhases = (
+				7DA755D93A57938ECC5D7FCB /* [CP] Check Pods Manifest.lock */,
+				527952B52416D3ED00A82F63 /* Sources */,
+				527952B62416D3ED00A82F63 /* Frameworks */,
+				527952B72416D3ED00A82F63 /* Resources */,
+				ADA5820ED1147CC342F7C393 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IoBike;
+			productName = IoBike;
+			productReference = 527952B92416D3ED00A82F63 /* IoBike.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		527952B12416D3ED00A82F63 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "James Lemkin";
+				TargetAttributes = {
+					527952B82416D3ED00A82F63 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 527952B42416D3ED00A82F63 /* Build configuration list for PBXProject "IoBike" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 527952B02416D3ED00A82F63;
+			productRefGroup = 527952BA2416D3ED00A82F63 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FF36A68C24747B5C0049F656 /* Products */;
+					ProjectRef = FF36A68B24747B5C0049F656 /* Pods.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				527952B82416D3ED00A82F63 /* IoBike */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FF36A69F24747B5C0049F656 /* FirebaseCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FirebaseCore.framework;
+			remoteRef = FF36A69E24747B5C0049F656 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF36A6A124747B5C0049F656 /* FirebaseCoreDiagnostics.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FirebaseCoreDiagnostics.framework;
+			remoteRef = FF36A6A024747B5C0049F656 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF36A6A324747B5C0049F656 /* FirebaseDatabase.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FirebaseDatabase.framework;
+			remoteRef = FF36A6A224747B5C0049F656 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF36A6A524747B5C0049F656 /* FirebaseInstallations.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FirebaseInstallations.framework;
+			remoteRef = FF36A6A424747B5C0049F656 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF36A6A724747B5C0049F656 /* GoogleDataTransport.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GoogleDataTransport.framework;
+			remoteRef = FF36A6A624747B5C0049F656 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF36A6A924747B5C0049F656 /* GoogleDataTransportCCTSupport.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GoogleDataTransportCCTSupport.framework;
+			remoteRef = FF36A6A824747B5C0049F656 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF36A6AB24747B5C0049F656 /* GoogleUtilities.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GoogleUtilities.framework;
+			remoteRef = FF36A6AA24747B5C0049F656 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF36A6AD24747B5C0049F656 /* leveldb.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = leveldb.framework;
+			remoteRef = FF36A6AC24747B5C0049F656 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF36A6AF24747B5C0049F656 /* nanopb.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = nanopb.framework;
+			remoteRef = FF36A6AE24747B5C0049F656 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF36A6B124747B5C0049F656 /* Pods_IoBike.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_IoBike.framework;
+			remoteRef = FF36A6B024747B5C0049F656 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF36A6B324747B5C0049F656 /* FBLPromises.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FBLPromises.framework;
+			remoteRef = FF36A6B224747B5C0049F656 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		527952B72416D3ED00A82F63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				527952C92416D3F700A82F63 /* LaunchScreen.storyboard in Resources */,
+				FF5CD176247483FD0090616E /* GoogleService-Info.plist in Resources */,
+				527952C62416D3F700A82F63 /* Preview Assets.xcassets in Resources */,
+				527952C32416D3F700A82F63 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7DA755D93A57938ECC5D7FCB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IoBike-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADA5820ED1147CC342F7C393 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IoBike/Pods-IoBike-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IoBike/Pods-IoBike-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IoBike/Pods-IoBike-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		527952B52416D3ED00A82F63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				527952BD2416D3ED00A82F63 /* AppDelegate.swift in Sources */,
+				52E2E964246C4646003D6CA7 /* MainView.swift in Sources */,
+				52E2E95E246B989B003D6CA7 /* UserDefaultsBackedDeviceStorage.swift in Sources */,
+				52D1D764245FB994003E2E00 /* SettingsView.swift in Sources */,
+				52AE73D52460C563005DE8AD /* ModalView.swift in Sources */,
+				520484A42463836000E2E35F /* Device.swift in Sources */,
+				527952DB24170D5800A82F63 /* MapView.swift in Sources */,
+				527952BF2416D3ED00A82F63 /* SceneDelegate.swift in Sources */,
+				529E45EE2466563B00430C08 /* QRCaptureView.swift in Sources */,
+				520484A024635DB700E2E35F /* StateView.swift in Sources */,
+				52E2E966246C4E28003D6CA7 /* OnBoardingView.swift in Sources */,
+				52E2E968246C79BF003D6CA7 /* InitialQRScanSuccessfulView.swift in Sources */,
+				52E2E959246B6A59003D6CA7 /* QRScanSuccessfulView.swift in Sources */,
+				52E2E96A246C7A02003D6CA7 /* SuccessView.swift in Sources */,
+				52E2E953246B1E72003D6CA7 /* QRScanView.swift in Sources */,
+				52D1D762245FB4B1003E2E00 /* Utils.swift in Sources */,
+				527952D32416FE2D00A82F63 /* BLEConnectionManager.swift in Sources */,
+				52E2E955246B6442003D6CA7 /* BikeRegistrationView.swift in Sources */,
+				527952DD241712F100A82F63 /* ToggleAlarmButton.swift in Sources */,
+				527952C12416D3ED00A82F63 /* ContentView.swift in Sources */,
+				52D1D766245FC31E003E2E00 /* SettingsRow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		527952C72416D3F700A82F63 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				527952C82416D3F700A82F63 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		527952CB2416D3F700A82F63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		527952CC2416D3F700A82F63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		527952CE2416D3F700A82F63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 615202315CB91C49EB4C53A9 /* Pods-IoBike.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"IoBike/Preview Content\"";
+				DEVELOPMENT_TEAM = 895EQWU522;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = IoBike/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "jtlemkin-ucdavis.edu.IoBike";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		527952CF2416D3F700A82F63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F47CDEFCF5CE2D49523030D /* Pods-IoBike.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"IoBike/Preview Content\"";
+				DEVELOPMENT_TEAM = 895EQWU522;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = IoBike/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "jtlemkin-ucdavis.edu.IoBike";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		527952B42416D3ED00A82F63 /* Build configuration list for PBXProject "IoBike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				527952CB2416D3F700A82F63 /* Debug */,
+				527952CC2416D3F700A82F63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		527952CD2416D3F700A82F63 /* Build configuration list for PBXNativeTarget "IoBike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				527952CE2416D3F700A82F63 /* Debug */,
+				527952CF2416D3F700A82F63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 527952B12416D3ED00A82F63 /* Project object */;
+}
