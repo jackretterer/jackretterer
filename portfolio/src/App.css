@@ -1,0 +1,286 @@
+.App {
+  background-image: url("images/black.jpg");
+  height: 100vh;
+  background-color: #001630;
+  margin-top: 0px;
+  overflow-y: auto;
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  margin-top: 85px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #ffffff;
+}
+
+/* Home Page */
+
+.Home-name-intro {
+  margin-top: 150px; 
+  text-align: left;
+  margin-left: 10%; 
+  font-size: calc(5px + 2vmin);
+  color: #ffffff;
+}
+
+.Home-name {
+  margin: 10px;
+  text-align: left;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  font-size: 75px;
+  color: #DC143C;
+}
+
+.Home-name-statement {
+  margin: 10px;
+  text-align: left;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  font-size: 60px;
+  color: #404040;
+}
+
+.home-page-intro {
+  margin-right: 25%;
+  margin-left: 10%;
+  text-align: left;
+  color: #ffffff;
+}
+
+.App-header-text {
+  margin-block-start: 0;
+}
+
+.Home-name-text {
+  margin-block-start: 0;
+}
+
+/* About Me */
+
+.About-Me-header {
+  margin-top: 150px;
+  margin-bottom: 10px;
+  text-align: left;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  font-size: 75px;
+  color: #DC143C;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.About-Me-page-intro {
+  margin-top: 0%;
+  float: left;
+  text-align: left;
+  width: 45%;
+  color: #ffffff;
+  margin-left: 10%;
+}
+
+.About-Me-prof {
+  float: right;
+  margin-right: 10%;
+  width: 30%;
+  height: auto;
+  border-radius: 30%;
+  border: 4px solid white;
+  display: block;
+}
+
+.common-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+/* Experience */
+
+/* Interests */
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.Interests-page-intro {
+  margin-top: 0%;
+  float: left;
+  text-align: left;
+  width: 45%;
+  color: #ffffff;
+  margin-left: 10%;
+}
+
+.Interests-prof {
+  float: right;
+  margin-right: 40%;
+  width: 20%;
+  height: auto;
+  border-radius: 0%;
+  border: 4px solid white;
+  display: block;
+}
+
+
+.prof-pic {
+  height: auto;
+  border-radius: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: 10%;
+  border: 4px solid white;
+}
+
+
+.App-body {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 30px;
+  color: #ffffff;
+}
+
+.App-footer {
+  position: absolute;
+  bottom: 0px;
+  height: 86px;
+  width: 165px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.Home-button {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  background-image: url("images/black.jpg");
+  background-color: #001630;
+  top: 10px;
+  z-index: 998;
+}
+
+.Nav-bar {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  background-image: url("images/black.jpg");
+  background-color: #001630;
+  top: 0px;
+  z-index: 998;
+}
+
+.Home-links {
+  margin-left: 10%;
+  float: left;
+  padding: 5px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: left;
+}
+
+.Home-links:hover {
+  background-color: rgba(105, 105, 105, 0.5);
+  color: #ffffff;
+}
+
+.logo {
+  margin-left: 0%;
+  width: 25%;
+  height: 25%;
+}
+
+.Nav-links {
+  float: right;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+}
+
+.Nav-links:hover {
+  background-color: rgba(105, 105, 105, 0.7);
+  color: #ffffff;
+}
+
+.active {
+  border-bottom:3px solid red;
+}
+
+.Act-desc {
+  padding-left: 30px;
+  padding-right: 50px;
+  text-align: justify;
+}
+
+.Act-title {
+  padding-left: 25px;
+  display: inline;
+}
+
+.Act-company {
+  display: inline;
+  color: red;
+}
+
+.Act-img {
+  width: 20%;
+}
+
+.Social-logo {
+  height: 46px;
+  padding: 18px;
+}
+
+
+.intro {
+  margin-right: 25%;
+  margin-left: 25%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

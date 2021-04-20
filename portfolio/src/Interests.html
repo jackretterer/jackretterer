@@ -1,0 +1,39 @@
+import React from "react"
+import linkedin from './images/linkedin.jpg';
+import github from './images/github.jpg';
+import prof from './images/prof.jpg'
+import Thumbnail from './Thumbnail.js';
+ 
+function About(props) {
+  return (
+    <div className="App">
+      <h1 className="About-Me-header">Interests</h1>
+        <div class="group">
+          <div className="About-Me-page-intro">
+              <p>
+                  My name is Jack Retterer. I am recent college graduate from the University of California, 
+                  Davis with a degree in Computer Science and Engineering. I am experienced and passionate about artificial intelligence applications in space, agriculture, finance, and medicine.
+              </p>
+              <p>
+                  Here are a few of the technologies I have been using
+              </p>
+              <ul class="common-list">
+                <li class="common-list-item">Python</li>
+                <li class="common-list-item">Java</li>
+                <li class="common-list-item">Javascript</li>  
+                <li class="common-list-item">React</li>
+                <li class="common-list-item">SQL</li>
+                <li class="common-list-item">C++</li>  
+                <li class="common-list-item">Git</li>
+                <li class="common-list-item">AWS</li> 
+              </ul>
+          </div>
+          <div>
+            <img src={prof} alt="" className="About-Me-prof" />
+          </div>
+        </div>
+
+  )
+}
+ 
+export default About;
