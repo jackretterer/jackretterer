@@ -22,6 +22,7 @@ function App() {
         <Route path="/resume" component={Resume} />
         <Route path="/experience" component={Experience} />
         <Route path="/projects" component={Projects} />
+        <Route path="/" component={Home} />
 
         <header className="Nav-bar">
           <NavLink to="/home" className="Home-links"><a><img className="logo" src={JLogo} alt=""/> </a> </NavLink>
