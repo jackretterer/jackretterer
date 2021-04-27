@@ -13,3 +13,16 @@ I used AWS Route 53 for domain registration.
 ## AWS CloudFront
 
 I used CloudFront for HTTPS
+
+## React
+
+For the most part this website is built from scratch. I did elect to use React. 
+
+## AWS CLI
+
+I installed AWS CLI with brew.
+Run: aws configure
+Then enter credentials
+Run: Yarn build
+Then add "deploy": "aws s3 sync build/ s3://your-bucket-name"
+Run: Yarn depoly
