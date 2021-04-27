@@ -29,7 +29,7 @@ function About(props) {
                 <li class="common-list-item">AWS</li> 
               </ul>
               <p>
-                  My interests include Space, Finance, Skiing, and Baking
+                  My interests include Space, Finance, Skiing, and Perfecting the Chocolate Chip Cookies
               </p>
           </div>
           <div>
