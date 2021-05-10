@@ -12,9 +12,8 @@ function Home() {
         <h3 className="Home-name-statement">I build things.</h3>
         <div className="home-page-intro">
             <p>
-                I am recent college graduate from the University of California, 
-                Davis with a degree in Computer Science and Engineering. Experienced and passionate about 
-                artificial intelligence applications in space, agriculture, finance, and medicine.
+                I am a recent college graduate from the University of California, 
+                Davis with a degree in Computer Science and Engineering. Passionate about making things happen and building cool projects..
             </p>
         </div>
     </div>

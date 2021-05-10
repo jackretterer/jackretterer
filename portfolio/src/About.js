@@ -12,7 +12,7 @@ function About(props) {
         <div class="group">
           <div className="About-Me-page-intro">
               <p>
-                  My name is Jack Retterer. I am recent college graduate from the University of California, 
+                  My name is Jack Retterer. I am a recent college graduate from the University of California, 
                   Davis with a degree in Computer Science and Engineering. I am experienced and passionate about artificial intelligence applications in space, agriculture, finance, and medicine.
               </p>
               <p>
