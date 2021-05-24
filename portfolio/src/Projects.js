@@ -36,6 +36,15 @@ function Projects(props) {
                         </p>
                     </div>
                 </div>
+                <div>
+                    <h2 className="Act-company">Chia Farm</h2>
+                    <h3 className="Act-title">Software Engineer / Electrical Engineer</h3>
+                    <div>
+                        <p className="Act-desc">
+                            Built a server for farming/plotting Chia. Chia is a new cryptocurrency project that is based off Proof of Space and Proof of Time. The project aims to be more scalable and environmentally responsible. We are building up to 2 petabytes of data.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
   )
