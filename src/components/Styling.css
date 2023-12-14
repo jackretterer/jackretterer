@@ -1,10 +1,12 @@
-@media (min-width: 768px) {
-    #about {
-      display: flex;
-      flex-direction: row;
-    }
-    #about > div {
-      width: 50%; /* Adjust as needed */
-    }
-  }
-  
+.logo {
+  flexGrow: 1;
+  color: black;
+  textDecoration: none;
+}
+
+.navLinks .MuiButton-root {
+  color: black;
+  marginRight: 16px;
+  textDecoration: none;
+  textTransform: none;
+}
