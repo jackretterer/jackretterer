@@ -4,8 +4,6 @@ import pfp from "../assets/pfp.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { makeStyles } from '@mui/styles';
-import './Styling.css';
 
 const LandingPage = () => {
 
