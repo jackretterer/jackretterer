@@ -52,10 +52,10 @@ const LandingPage = () => {
         <Container maxWidth="lg" style={{ display: 'flex', alignItems: 'center' }}>
           {/* Text and content inside the Container */}
           <Box style={{ marginLeft: '5%', width: '100%' }}>
-            <Typography variant="h1" style={{ fontWeight: 'bold' }}>
+            <Typography variant="h1" style={{ fontWeight: 'bold', fontSize: '6vw' }}>
               currently building
             </Typography>
-            <Typography variant="h1" style={{ fontWeight: 'bold' }}>
+            <Typography variant="h1" style={{ fontWeight: 'bold', fontSize: '6vw' }}>
               (hopefully) cool things.
             </Typography>
             <Typography variant="h5" color="textSecondary" style={{ fontWeight: 'bold', marginTop: '2%' }}>
@@ -91,12 +91,12 @@ const LandingPage = () => {
             <Typography variant="body1" paragraph>
               I want to build products that help the world. That's pretty much it. I am a firm believer that technology has the potential to benefit the world. And when you build a good enough product its almost like a gift to the user.
           </Typography>
-          <Typography variant="body1" paragraph>
+            <Typography variant="body1" paragraph>
               My biggest interests are in crypto, AI and space. I've worked in some capacity in all three, spending most of my time in AI.
           </Typography>
             <Typography variant="body1" paragraph style={{ marginBottom: '50px' }}>
-            I am "jack" of all trades. I am capable of writing code but I view myself more as a builder. I know frontend, machine learning, data analysis and a little bit of backend.
-            Outside of working and building projects I like skiing, running, art, lifting, baking and being outside.
+              I am "jack" of all trades. I am capable of writing code but I view myself more as a builder. I know frontend, machine learning, data analysis and a little bit of backend.
+              Outside of working and building projects I like skiing, running, art, lifting, baking and being outside.
           </Typography>
           </Box>
         </Box>
@@ -117,7 +117,7 @@ const LandingPage = () => {
           flexDirection: 'column',
           alignItems: 'flex-start',
           backgroundColor: "#EEEEEE",
-          width: '100vw',
+          width: '100%',
           padding: isMobile ? '10% 5%' : '10% 20%', // Adjust padding based on screen size
         }}
       >
@@ -133,34 +133,34 @@ const LandingPage = () => {
           <Box style={{ flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
             {/* Timeline Line */}
             <Box style={{ flexGrow: 1, position: 'relative' }}>
-            {isMobile ? <Box style={{ position: 'absolute', left: '20px', borderLeft: '2px solid black', height: '100%' }} /> : null}
-            {!isMobile && <Box style={{ position: 'absolute', left: '0', borderLeft: '2px solid black', height: '100%' }} />}
+              {isMobile ? <Box style={{ position: 'absolute', left: '20px', borderLeft: '2px solid black', height: '100%' }} /> : null}
+              {!isMobile && <Box style={{ position: 'absolute', left: '0', borderLeft: '2px solid black', height: '100%' }} />}
               {/* Points on the timeline */}
-              <Box style={{ paddingLeft: isMobile ? '45px' : '40px', paddingBottom: '40px', textAlign: 'left' }}>
+              <Box style={{ paddingLeft: isMobile ? '10%' : '40px', paddingBottom: '40px', textAlign: 'left' }}>
                 <Typography variant="h6">Unstructured, San Francisco, CA</Typography>
                 <Typography variant="subtitle1">Developer Advocate Engineer (Jul 2023 - Dec 2023)</Typography>
               </Box>
-              <Box style={{ paddingLeft: isMobile ? '45px' : '40px', paddingBottom: '40px', textAlign: 'left' }}>
+              <Box style={{ paddingLeft: isMobile ? '10%' : '40px', paddingBottom: '40px', textAlign: 'left' }}>
                 <Typography variant="h6">Gemini / Nifty Gateway, San Francisco, CA</Typography>
                 <Typography variant="subtitle1">Business Development (Jan 2022 - Jul 2023)</Typography>
               </Box>
 
-              <Box style={{ paddingLeft: isMobile ? '45px' : '40px', paddingBottom: '40px', textAlign: 'left' }}>
+              <Box style={{ paddingLeft: isMobile ? '10%' : '40px', paddingBottom: '40px', textAlign: 'left' }}>
                 <Typography variant="h6">Intertek, Menlo Park, CA</Typography>
                 <Typography variant="subtitle1">Safety Engineer (June 2021 - Jan 2022)</Typography>
               </Box>
 
-              <Box style={{ paddingLeft: isMobile ? '45px' : '40px', paddingBottom: '40px', textAlign: 'left' }}>
+              <Box style={{ paddingLeft: isMobile ? '10%' : '40px', paddingBottom: '40px', textAlign: 'left' }}>
                 <Typography variant="h6">University of California, Davis, Davis, CA</Typography>
                 <Typography variant="subtitle1">Deep Learning Researcher (May 2019 - June 2020)</Typography>
               </Box>
 
-              <Box style={{ paddingLeft: isMobile ? '45px' : '40px', paddingBottom: '40px', textAlign: 'left' }}>
+              <Box style={{ paddingLeft: isMobile ? '10%' : '40px', paddingBottom: '40px', textAlign: 'left' }}>
                 <Typography variant="h6">Ottimate (formerly PlateIQ), Emeryville, CA</Typography>
                 <Typography variant="subtitle1">Software Engineer (June 2018 - Sep 2018)</Typography>
               </Box>
 
-              <Box style={{ paddingLeft: isMobile ? '45px' : '40px', paddingBottom: '40px', textAlign: 'left' }}>
+              <Box style={{ paddingLeft: isMobile ? '10%' : '40px', paddingBottom: '40px', textAlign: 'left' }}>
                 <Typography variant="h6">TextRecruit, San Jose, CA</Typography>
                 <Typography variant="subtitle1">AI Engineer (Aug 2017 - Sep 2018)</Typography>
               </Box>
