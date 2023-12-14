@@ -1,0 +1,10 @@
+@media (min-width: 768px) {
+    #about {
+      display: flex;
+      flex-direction: row;
+    }
+    #about > div {
+      width: 50%; /* Adjust as needed */
+    }
+  }
+  
