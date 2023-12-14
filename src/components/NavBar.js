@@ -19,8 +19,8 @@ const StyledIconButton = styled(IconButton)({
 
 const NavBar = () => {
   return (
-    <AppBar position="sticky" sx={{ backgroundColor: '#EEEEEE', elevation: 0 }}>
-      <Toolbar>
+    <AppBar position="sticky" sx={{ backgroundColor: '#EEEEEE', elevation: 0, borderBottom: 'none' }}>
+      <Toolbar sx={{ padding: '0px', margin: '0px' }}>
         <StyledTypography variant="h6" component={Link} to="/" sx={{ textDecoration: 'none' }}>
           <img src={logo} alt="Logo" style={{ height: '40px' }} />
         </StyledTypography>
