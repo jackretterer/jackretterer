@@ -52,12 +52,26 @@ const LandingPage = () => {
         <Container maxWidth="lg" style={{ display: 'flex', alignItems: 'center' }}>
           {/* Text and content inside the Container */}
           <Box style={{ marginLeft: '5%', width: '100%' }}>
-            <Typography variant="h1" style={{ fontWeight: 'bold', fontSize: '6vw' }}>
-              currently building
-            </Typography>
-            <Typography variant="h1" style={{ fontWeight: 'bold', fontSize: '6vw' }}>
-              (hopefully) cool things.
-            </Typography>
+            {
+              isMobile ?
+                <Typography variant="h1" style={{ fontWeight: 'bold', fontSize: '15vw' }}>
+                  currently building
+                </Typography>
+                :
+                <Typography variant="h1" style={{ fontWeight: 'bold'}}>
+                  currently building
+                </Typography>
+            }
+            {
+              isMobile ?
+                <Typography variant="h1" style={{ fontWeight: 'bold', fontSize: '15vw' }}>
+                  (hopefully) cool things
+                </Typography>
+                :
+                <Typography variant="h1" style={{ fontWeight: 'bold'}}>
+                  (hopefully) cool things
+                </Typography>
+            }
             <Typography variant="h5" color="textSecondary" style={{ fontWeight: 'bold', marginTop: '2%' }}>
               - Jack Retterer
             </Typography>
@@ -117,7 +131,6 @@ const LandingPage = () => {
           flexDirection: 'column',
           alignItems: 'flex-start',
           backgroundColor: "#EEEEEE",
-          width: '100%',
           padding: isMobile ? '10% 5%' : '10% 20%', // Adjust padding based on screen size
         }}
       >
@@ -137,32 +150,32 @@ const LandingPage = () => {
               {!isMobile && <Box style={{ position: 'absolute', left: '0', borderLeft: '2px solid black', height: '100%' }} />}
               {/* Points on the timeline */}
               <Box style={{ paddingLeft: isMobile ? '10%' : '40px', paddingBottom: '40px', textAlign: 'left' }}>
-                <Typography variant="h6">Unstructured, San Francisco, CA</Typography>
-                <Typography variant="subtitle1">Developer Advocate Engineer (Jul 2023 - Dec 2023)</Typography>
+                <Typography variant="h6" style={{fontSize: isMobile ? '3vw' : null }}>Unstructured, San Francisco, CA</Typography>
+                <Typography variant="subtitle1" style={{fontSize: isMobile ? '3vw' : null }}>Developer Advocate Engineer (Jul 2023 - Dec 2023)</Typography>
               </Box>
               <Box style={{ paddingLeft: isMobile ? '10%' : '40px', paddingBottom: '40px', textAlign: 'left' }}>
-                <Typography variant="h6">Gemini / Nifty Gateway, San Francisco, CA</Typography>
-                <Typography variant="subtitle1">Business Development (Jan 2022 - Jul 2023)</Typography>
-              </Box>
-
-              <Box style={{ paddingLeft: isMobile ? '10%' : '40px', paddingBottom: '40px', textAlign: 'left' }}>
-                <Typography variant="h6">Intertek, Menlo Park, CA</Typography>
-                <Typography variant="subtitle1">Safety Engineer (June 2021 - Jan 2022)</Typography>
+                <Typography variant="h6" style={{fontSize: isMobile ? '3vw' : null }}>Gemini / Nifty Gateway, San Francisco, CA</Typography>
+                <Typography variant="subtitle1" style={{fontSize: isMobile ? '3vw' : null }}>Business Development (Jan 2022 - Jul 2023)</Typography>
               </Box>
 
               <Box style={{ paddingLeft: isMobile ? '10%' : '40px', paddingBottom: '40px', textAlign: 'left' }}>
-                <Typography variant="h6">University of California, Davis, Davis, CA</Typography>
-                <Typography variant="subtitle1">Deep Learning Researcher (May 2019 - June 2020)</Typography>
+                <Typography variant="h6" style={{fontSize: isMobile ? '3vw' : null }}>Intertek, Menlo Park, CA</Typography>
+                <Typography variant="subtitle1" style={{fontSize: isMobile ? '3vw' : null }}>Safety Engineer (June 2021 - Jan 2022)</Typography>
               </Box>
 
               <Box style={{ paddingLeft: isMobile ? '10%' : '40px', paddingBottom: '40px', textAlign: 'left' }}>
-                <Typography variant="h6">Ottimate (formerly PlateIQ), Emeryville, CA</Typography>
-                <Typography variant="subtitle1">Software Engineer (June 2018 - Sep 2018)</Typography>
+                <Typography variant="h6" style={{fontSize: isMobile ? '3vw' : null }}>University of California, Davis, Davis, CA</Typography>
+                <Typography variant="subtitle1" style={{fontSize: isMobile ? '3vw' : null }}>Deep Learning Researcher (May 2019 - June 2020)</Typography>
               </Box>
 
               <Box style={{ paddingLeft: isMobile ? '10%' : '40px', paddingBottom: '40px', textAlign: 'left' }}>
-                <Typography variant="h6">TextRecruit, San Jose, CA</Typography>
-                <Typography variant="subtitle1">AI Engineer (Aug 2017 - Sep 2018)</Typography>
+                <Typography variant="h6" style={{fontSize: isMobile ? '3vw' : null }}>Ottimate (formerly PlateIQ), Emeryville, CA</Typography>
+                <Typography variant="subtitle1" style={{fontSize: isMobile ? '3vw' : null }}>Software Engineer (June 2018 - Sep 2018)</Typography>
+              </Box>
+
+              <Box style={{ paddingLeft: isMobile ? '10%' : '40px', paddingBottom: '40px', textAlign: 'left' }}>
+                <Typography variant="h6" style={{fontSize: isMobile ? '3vw' : null }}>TextRecruit, San Jose, CA</Typography>
+                <Typography variant="subtitle1" style={{fontSize: isMobile ? '3vw' : null }}>AI Engineer (Aug 2017 - Sep 2018)</Typography>
               </Box>
             </Box>
           </Box>
@@ -180,7 +193,6 @@ const LandingPage = () => {
           flexDirection: 'column',
           alignItems: 'flex-start',
           backgroundColor: "#FFFF",
-          width: '100%',
           padding: '5% 10%', // Reduced padding for better mobile view
         }}
       >
