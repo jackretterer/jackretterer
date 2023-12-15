@@ -51,7 +51,7 @@ const LandingPage = () => {
       >
         <Container maxWidth="lg" style={{ display: 'flex', alignItems: 'center' }}>
           {/* Text and content inside the Container */}
-          <Box style={{ marginLeft: '5%', width: '100%', marginTop: isMobile ? '-25%' : '-10%' }}>
+          <Box style={{ marginLeft: '5%', width: '100%', marginTop: isMobile ? '-35%' : '-10%' }}>
             {
               isMobile ?
                 <Typography variant="h1" style={{ fontWeight: 'bold', fontSize: '15vw' }}>
