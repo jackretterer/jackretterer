@@ -81,8 +81,8 @@ const LandingPage = () => {
           <Typography
             style={{
               position: 'absolute',
-              bottom: 20,
-              right: 20,
+              bottom: '1%',
+              right: '2%',
               writingMode: 'vertical-rl',
               transform: 'rotate(0deg)',
               cursor: 'pointer',
