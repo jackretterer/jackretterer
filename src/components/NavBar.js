@@ -4,7 +4,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { styled } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import logo from '../assets/logo.png';
 
 const StyledTypography = styled(Typography)(({ theme }) => ({
@@ -41,7 +41,7 @@ const NavBar = () => {
     <>
       <List>
         {['About', 'Experience', 'Projects'].map((text) => (
-          <ListItem button key={text} sx={{textTransform: 'none'}} component="a" href={`#${text.toLowerCase()}`}>
+          <ListItem button key={text} component="a" href={`#${text.toLowerCase()}`}>
             <ListItemText primary={text} />
           </ListItem>
         ))}
@@ -49,8 +49,11 @@ const NavBar = () => {
       <StyledIconButton href="https://twitter.com/jaretterer" target="_blank">
         <FontAwesomeIcon icon={faTwitter} />
       </StyledIconButton>
-      <StyledIconButton href="https://linkedin.com/jackretterer" target="_blank">
+      <StyledIconButton href="https://www.linkedin.com/in/jackretterer/" target="_blank">
         <FontAwesomeIcon icon={faLinkedin} />
+      </StyledIconButton>
+      <StyledIconButton href="https://github.com/jackretterer" target="_blank">
+            <FontAwesomeIcon icon={faGithub} />
       </StyledIconButton>
     </>
   );
@@ -79,8 +82,11 @@ const NavBar = () => {
           <StyledIconButton href="https://twitter.com/jaretterer" target="_blank">
             <FontAwesomeIcon icon={faTwitter} />
           </StyledIconButton>
-          <StyledIconButton href="https://linkedin.com/jackretterer" target="_blank">
+          <StyledIconButton href="https://www.linkedin.com/in/jackretterer/" target="_blank">
             <FontAwesomeIcon icon={faLinkedin} />
+          </StyledIconButton>
+          <StyledIconButton href="https://github.com/jackretterer" target="_blank">
+            <FontAwesomeIcon icon={faGithub} />
           </StyledIconButton>
         </div>
         }

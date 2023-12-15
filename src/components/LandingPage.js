@@ -3,7 +3,7 @@ import { Container, Box, Typography, ListItem, List, Link, IconButton } from '@m
 import pfp from "../assets/pfp.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const LandingPage = () => {
 
@@ -230,8 +230,11 @@ const LandingPage = () => {
           <IconButton color="inherit" href="https://twitter.com/jaretterer" target="_blank" sx={{ '&:hover': { backgroundColor: 'transparent', opacity: 1 } }}>
             <FontAwesomeIcon icon={faTwitter} style={{ color: 'black' }} />
           </IconButton>
-          <IconButton color="inherit" href="https://linkedin.com/jackretterer" target="_blank" sx={{ '&:hover': { backgroundColor: 'transparent', opacity: 1 } }}>
+          <IconButton color="inherit" href="https://www.linkedin.com/in/jackretterer/" target="_blank" sx={{ '&:hover': { backgroundColor: 'transparent', opacity: 1 } }}>
             <FontAwesomeIcon icon={faLinkedin} style={{ color: 'black' }} />
+          </IconButton>
+          <IconButton href="https://github.com/jackretterer" target="_blank">
+            <FontAwesomeIcon icon={faGithub} style={{ color: 'black' }}/>
           </IconButton>
         </Box>
       </Box>
