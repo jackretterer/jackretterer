@@ -24,18 +24,24 @@ Ensure you have npm installed:
 ```bash
 npm install npm@latest -g
 
-
-## Getting Started
+### Getting Started
 
 To get a local copy up and running, follow these simple steps.
 
 1. Clone the repo
+```bash
 git clone https://github.com/jackretterer/portfolio.git
+```
 2. Install NPM packages from the root directory
-npm install
-3. To start the project locally in your browser:
-npm start
 
+```bash
+npm install
+```
+3. To start the project locally in your browser:
+
+```bash
+npm start
+```
 * By default this will run the site on http://localhost:3000
 
 Deployment
