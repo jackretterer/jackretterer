@@ -23,6 +23,7 @@ The landing page of this portfolio is designed to provide a comprehensive view o
 Ensure you have npm installed:
 ```bash
 npm install npm@latest -g
+```
 
 ### Getting Started
 
