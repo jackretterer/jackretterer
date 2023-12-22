@@ -37,7 +37,7 @@ const TechChip = styled(Chip)(({ theme }) => ({
 const projects = [
   {
     name: 'Advocate AI - Legal Analysis Tool Kit',
-    url: '#',
+    url: 'https://www.advocateai.xyz/',
     techStack: [
       { label: 'React', icon: <ComputerIcon /> },
       { label: 'Django', icon: <StorageIcon /> },
@@ -46,7 +46,7 @@ const projects = [
   },
   {
     name: 'Pen2Pixel - In Development',
-    url: '#',
+    url: 'https://www.linkedin.com/company/divitas-networks/',
     techStack: [
       { label: 'React', icon: <ComputerIcon /> },
       { label: 'Spring Boot', icon: <StorageIcon /> },
