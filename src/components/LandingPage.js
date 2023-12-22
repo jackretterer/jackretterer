@@ -1,16 +1,61 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Box, Typography, ListItem, List, Link, IconButton } from '@mui/material';
+import { Container, Box, Typography, ListItem, List, Link, IconButton, Grid, Chip, Paper } from '@mui/material';
+import { styled } from '@mui/system';
 import pfp from "../assets/pfp.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import ComputerIcon from '@mui/icons-material/Computer';
+import StorageIcon from '@mui/icons-material/Storage';
+import PsychologyIcon from '@mui/icons-material/Psychology';
+
+const ProjectContainer = styled(Box)(({ theme }) => ({
+  backgroundColor: "#FFF",
+  padding: theme.spacing(6, 10),
+  [theme.breakpoints.down('sm')]: {
+    padding: theme.spacing(4, 2),
+  },
+}));
+
+const ProjectTitle = styled(Typography)({
+  fontWeight: 'bold',
+  marginBottom: '1rem',
+});
+
+const ProjectLink = styled(Link)({
+  color: '#0077b5',
+  textDecoration: 'none',
+  '&:hover': {
+    textDecoration: 'underline',
+  },
+});
+
+const TechChip = styled(Chip)(({ theme }) => ({
+  margin: theme.spacing(0.5),
+}));
+
+const projects = [
+  {
+    name: 'Advocate AI - Legal Analysis Tool Kit',
+    url: '#',
+    techStack: [
+      { label: 'React', icon: <ComputerIcon /> },
+      { label: 'Django', icon: <StorageIcon /> },
+      { label: 'LLMs', icon: <PsychologyIcon /> },
+    ],
+  },
+  {
+    name: 'Pen2Pixel - In Development',
+    url: '#',
+    techStack: [
+      { label: 'React', icon: <ComputerIcon /> },
+      { label: 'Spring Boot', icon: <StorageIcon /> },
+      { label: 'Computer Vision/OCR', icon: <PsychologyIcon /> },
+    ],
+  },
+];
 
 const LandingPage = () => {
-
-  const projects = [
-    { name: "Advocate AI - Legal Analysis Tool Kit", url: "https://www.advocateai.xyz/" },
-    // Add more projects here
-  ];
 
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
@@ -106,11 +151,11 @@ const LandingPage = () => {
               I want to build products that help the world. That's pretty much it. I am a firm believer that technology has the potential to benefit the world. And when you build a good enough product its almost like a gift to the user.
           </Typography>
             <Typography variant="body1" paragraph>
-              My biggest interests are in crypto, AI and space. I've worked in some capacity in all three, spending most of my time in AI.
+              My biggest interests are in crypto, AI, finance and space. I've worked in some capacity in all of them, but have spent most of my time in AI.
           </Typography>
             <Typography variant="body1" paragraph style={{ marginBottom: '50px' }}>
               I am "jack" of all trades. I am capable of writing code but I view myself more as a builder. I know frontend, machine learning, data analysis and a little bit of backend.
-              Outside of working and building projects I like skiing, running, art, lifting, baking and being outside.
+              Outside of working and building projects I like skiing, running, investing, art, lifting, baking and being outside.
           </Typography>
           </Box>
         </Box>
@@ -185,30 +230,33 @@ const LandingPage = () => {
 
 
       {/* Projects */}
-      <Box
-        id="projects"
-        style={{
-          minHeight: '100vh',
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'flex-start',
-          backgroundColor: "#FFFF",
-          padding: '5% 10%', // Reduced padding for better mobile view
-        }}
-      >
-        <Typography variant="h4" style={{ marginBottom: '2rem' }}>Projects</Typography>
+      <ProjectContainer id="projects">
+        <Typography variant="h4" component="h2" marginBottom="32px">Projects</Typography>
+        <Grid container spacing={4}>
+          {projects.map((project, index) => (
+            <Grid item xs={12} md={6} key={index}>
+              <Paper elevation={2} sx={{ padding: '16px' }}>
+                <ProjectTitle variant="h6">
+                  {project.name}
+                </ProjectTitle>
+                <ProjectLink sx={{color: 'black'}} href={project.url} target="_blank" rel="noopener noreferrer">
+                  View Project
+                </ProjectLink>
+                <Box mt={2}>
+                  {project.techStack.map((tech, idx) => (
+                    <TechChip
+                      key={idx}
+                      icon={tech.icon}
+                      label={tech.label}
+                    />
+                  ))}
+                </Box>
+              </Paper>
+            </Grid>
+          ))}
+        </Grid>
+      </ProjectContainer>
 
-        {projects.map((project, index) => (
-          <Box key={index} style={{ marginBottom: '1rem' }}>
-            <Typography variant="h6" style={{ fontWeight: 'bold' }}>
-              {project.name}
-            </Typography>
-            <Link href={project.url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
-              <Typography variant="body1" style={{ color: '#0077b5' }}>View Project</Typography>
-            </Link>
-          </Box>
-        ))}
-      </Box>
 
       <Box
         sx={{
