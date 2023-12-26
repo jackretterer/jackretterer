@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Box, Typography, ListItem, List, Link, IconButton, Grid, Chip, Paper } from '@mui/material';
+import { Container, Box, Typography, ListItem, List, Link, IconButton, Grid, Chip, Paper, useTheme } from '@mui/material';
 import { styled } from '@mui/system';
 import pfp from "../assets/pfp.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -82,6 +82,8 @@ const LandingPage = () => {
     justifyContent: 'center',
     alignItems: 'center'
   };
+
+  const theme = useTheme();
 
   return (
     <div>
@@ -257,6 +259,30 @@ const LandingPage = () => {
         </Grid>
       </ProjectContainer>
 
+      <Box
+      sx={{
+        minHeight: '10vh',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'flex-start',
+        backgroundColor: theme.palette.grey[200],
+        padding: theme.spacing(isMobile ? 4 : 8),
+      }}
+    >
+      <Typography variant="h4" gutterBottom sx={{textAlign: "center",  width: '100%'}}>
+        Recent Reads
+      </Typography>
+      <List>
+        {['A Random Walk Down Wall Street - Burton Malkiel', 
+          'Reinventing banking and finance - Helene Panzarino & Alessandro Hatami', 
+          'The Future of Money - Eswar Prasad', 
+          'The Changing World Order - Ray Dalio'].map((text, index) => (
+            <ListItem key={index} disableGutters>
+              <Typography variant="body1">{text}</Typography>
+            </ListItem>
+        ))}
+      </List>
+    </Box>
 
       <Box
         sx={{
