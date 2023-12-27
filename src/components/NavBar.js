@@ -60,9 +60,18 @@ const NavBar = () => {
 
   return (
     <AppBar position="sticky" sx={{ backgroundColor: '#EEEEEE', elevation: 0, borderBottom: 'none' }}>
-      <Toolbar sx={{ padding: '0 16px', margin: '0px' }}>
-        <StyledTypography variant="h6" component={Link} to="/" sx={{ textDecoration: 'none' }}>
-          <img src={logo} alt="Logo" style={{ height: '40px' }} />
+      <Toolbar sx={{ padding: '0 16px', margin: '0px', display: 'flex', alignItems: 'center' }}>
+      <StyledTypography 
+        variant="h6" 
+        component={Link} 
+        to="/" 
+        sx={{ 
+          textDecoration: 'none', 
+          display: 'flex', // Make the container a flex container
+          alignItems: 'center' // Align children vertically
+        }}>
+            <img src={logo} alt="Logo" style={{ height: '40px' }} />
+          <Typography sx={{paddingLeft: "3px"}}> Jack Retterer</Typography>
         </StyledTypography>
         { isMobile ? 
         <IconButton

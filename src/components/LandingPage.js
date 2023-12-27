@@ -112,16 +112,13 @@ const LandingPage = () => {
             {
               isMobile ?
                 <Typography variant="h1" style={{ fontWeight: 'bold', fontSize: '15vw' }}>
-                  (hopefully) cool things
+                  cool things.
                 </Typography>
                 :
                 <Typography variant="h1" style={{ fontWeight: 'bold'}}>
-                  (hopefully) cool things
+                  cool things.
                 </Typography>
             }
-            <Typography variant="h5" color="textSecondary" style={{ fontWeight: 'bold', marginTop: '2%' }}>
-              - Jack Retterer
-            </Typography>
           </Box>
 
           {/* Scroll Down Indicator */}
@@ -150,7 +147,7 @@ const LandingPage = () => {
               About Me
           </Typography>
             <Typography variant="body1" paragraph>
-              I want to build products that help the world. That's pretty much it. I am a firm believer that technology has the potential to benefit the world. And when you build a good enough product its almost like a gift to the user.
+              I am building products that help the world. That's pretty much it. I am a firm believer that technology has the potential to benefit the world. And when you build a good enough product its almost like a gift to the user.
           </Typography>
             <Typography variant="body1" paragraph>
               My biggest interests are in crypto, AI, finance and space. I've worked in some capacity in all of them, but have spent most of my time in AI.
