@@ -273,7 +273,10 @@ const LandingPage = () => {
         {['A Random Walk Down Wall Street - Burton Malkiel', 
           'Reinventing banking and finance - Helene Panzarino & Alessandro Hatami', 
           'The Future of Money - Eswar Prasad', 
-          'The Changing World Order - Ray Dalio'].map((text, index) => (
+          'The Changing World Order - Ray Dalio',
+          'Sapiens - Yuval Noah Harari',
+          'Capital - Thomas Piketty'
+        ].map((text, index) => (
             <ListItem key={index} disableGutters>
               <Typography variant="body1">{text}</Typography>
             </ListItem>
