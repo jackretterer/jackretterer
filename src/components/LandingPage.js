@@ -34,27 +34,6 @@ const TechChip = styled(Chip)(({ theme }) => ({
   margin: theme.spacing(0.5),
 }));
 
-const projects = [
-  {
-    name: 'Advocate AI - Legal Analysis Tool Kit',
-    url: 'https://www.advocateai.xyz/',
-    techStack: [
-      { label: 'React', icon: <ComputerIcon /> },
-      { label: 'Django', icon: <StorageIcon /> },
-      { label: 'LLMs', icon: <PsychologyIcon /> },
-    ],
-  },
-  {
-    name: 'Pen2Pixel - In Development',
-    url: 'https://www.linkedin.com/company/divitas-networks/',
-    techStack: [
-      { label: 'React', icon: <ComputerIcon /> },
-      { label: 'Spring Boot', icon: <StorageIcon /> },
-      { label: 'Computer Vision/OCR', icon: <PsychologyIcon /> },
-    ],
-  },
-];
-
 const LandingPage = () => {
 
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -105,7 +84,7 @@ const LandingPage = () => {
                   currently building
                 </Typography>
                 :
-                <Typography variant="h1" style={{ fontWeight: 'bold'}}>
+                <Typography variant="h1" style={{ fontWeight: 'bold' }}>
                   currently building
                 </Typography>
             }
@@ -115,7 +94,7 @@ const LandingPage = () => {
                   cool things.
                 </Typography>
                 :
-                <Typography variant="h1" style={{ fontWeight: 'bold'}}>
+                <Typography variant="h1" style={{ fontWeight: 'bold' }}>
                   cool things.
                 </Typography>
             }
@@ -143,19 +122,19 @@ const LandingPage = () => {
       <Box id="about" style={aboutStyle}>
         <Box style={sectionStyle}>
           <Box style={{ width: '85%' }}>
-            <Typography variant="h3" style={{ marginTop: '35px', marginBottom: '20px' }}>
+            <Typography variant="h3" style={{ marginTop: '35px', marginBottom: '20px', fontWeight: 'bold' }}>
               About Me
-          </Typography>
+            </Typography>
             <Typography variant="body1" paragraph>
               I am building products that help the world. That's pretty much it. I am a firm believer that technology has the potential to benefit the world. And when you build a good enough product its almost like a gift to the user.
-          </Typography>
+            </Typography>
             <Typography variant="body1" paragraph>
               My biggest interests are in crypto, AI, finance and space. I've worked in some capacity in all of them, but have spent most of my time in AI.
-          </Typography>
+            </Typography>
             <Typography variant="body1" paragraph style={{ marginBottom: '50px' }}>
               I am "jack" of all trades. I am capable of writing code but I view myself more as a builder. I know frontend, machine learning, data analysis and a little bit of backend.
               Outside of working and building projects I like skiing, running, investing, art, lifting, baking and being outside.
-          </Typography>
+            </Typography>
           </Box>
         </Box>
 
@@ -194,32 +173,36 @@ const LandingPage = () => {
               {!isMobile && <Box style={{ position: 'absolute', left: '0', borderLeft: '2px solid black', height: '100%' }} />}
               {/* Points on the timeline */}
               <Box style={{ paddingLeft: isMobile ? '10%' : '40px', paddingBottom: '40px', textAlign: 'left' }}>
-                <Typography variant="h6" style={{fontSize: isMobile ? '3vw' : null }}>Unstructured, San Francisco, CA</Typography>
-                <Typography variant="subtitle1" style={{fontSize: isMobile ? '3vw' : null }}>Developer Advocate Engineer (Jul 2023 - Dec 2023)</Typography>
+                <Typography variant="h6" style={{ fontSize: isMobile ? '3vw' : null }}>Advocate AI, San Francisco, CA</Typography>
+                <Typography variant="subtitle1" style={{ fontSize: isMobile ? '3vw' : null }}>Founder/CEO (March 2023 - Present)</Typography>
               </Box>
               <Box style={{ paddingLeft: isMobile ? '10%' : '40px', paddingBottom: '40px', textAlign: 'left' }}>
-                <Typography variant="h6" style={{fontSize: isMobile ? '3vw' : null }}>Gemini / Nifty Gateway, San Francisco, CA</Typography>
-                <Typography variant="subtitle1" style={{fontSize: isMobile ? '3vw' : null }}>Business Development (Jan 2022 - Jul 2023)</Typography>
+                <Typography variant="h6" style={{ fontSize: isMobile ? '3vw' : null }}>Unstructured, San Francisco, CA</Typography>
+                <Typography variant="subtitle1" style={{ fontSize: isMobile ? '3vw' : null }}>Developer Advocate Engineer (July 2023 - December 2023)</Typography>
               </Box>
-
               <Box style={{ paddingLeft: isMobile ? '10%' : '40px', paddingBottom: '40px', textAlign: 'left' }}>
-                <Typography variant="h6" style={{fontSize: isMobile ? '3vw' : null }}>Intertek, Menlo Park, CA</Typography>
-                <Typography variant="subtitle1" style={{fontSize: isMobile ? '3vw' : null }}>Safety Engineer (June 2021 - Jan 2022)</Typography>
-              </Box>
-
-              <Box style={{ paddingLeft: isMobile ? '10%' : '40px', paddingBottom: '40px', textAlign: 'left' }}>
-                <Typography variant="h6" style={{fontSize: isMobile ? '3vw' : null }}>University of California, Davis, Davis, CA</Typography>
-                <Typography variant="subtitle1" style={{fontSize: isMobile ? '3vw' : null }}>Deep Learning Researcher (May 2019 - June 2020)</Typography>
+                <Typography variant="h6" style={{ fontSize: isMobile ? '3vw' : null }}>Gemini / Nifty Gateway, San Francisco, CA</Typography>
+                <Typography variant="subtitle1" style={{ fontSize: isMobile ? '3vw' : null }}>Business Development (January 2022 - July 2023)</Typography>
               </Box>
 
               <Box style={{ paddingLeft: isMobile ? '10%' : '40px', paddingBottom: '40px', textAlign: 'left' }}>
-                <Typography variant="h6" style={{fontSize: isMobile ? '3vw' : null }}>Ottimate (formerly PlateIQ), Emeryville, CA</Typography>
-                <Typography variant="subtitle1" style={{fontSize: isMobile ? '3vw' : null }}>Software Engineer (June 2018 - Sep 2018)</Typography>
+                <Typography variant="h6" style={{ fontSize: isMobile ? '3vw' : null }}>Intertek, Menlo Park, CA</Typography>
+                <Typography variant="subtitle1" style={{ fontSize: isMobile ? '3vw' : null }}>Safety Engineer (June 2021 - January 2022)</Typography>
               </Box>
 
               <Box style={{ paddingLeft: isMobile ? '10%' : '40px', paddingBottom: '40px', textAlign: 'left' }}>
-                <Typography variant="h6" style={{fontSize: isMobile ? '3vw' : null }}>TextRecruit, San Jose, CA</Typography>
-                <Typography variant="subtitle1" style={{fontSize: isMobile ? '3vw' : null }}>AI Engineer (Aug 2017 - Sep 2018)</Typography>
+                <Typography variant="h6" style={{ fontSize: isMobile ? '3vw' : null }}>University of California, Davis, Davis, CA</Typography>
+                <Typography variant="subtitle1" style={{ fontSize: isMobile ? '3vw' : null }}>Deep Learning Researcher (May 2019 - June 2020)</Typography>
+              </Box>
+
+              <Box style={{ paddingLeft: isMobile ? '10%' : '40px', paddingBottom: '40px', textAlign: 'left' }}>
+                <Typography variant="h6" style={{ fontSize: isMobile ? '3vw' : null }}>Ottimate (formerly PlateIQ), Emeryville, CA</Typography>
+                <Typography variant="subtitle1" style={{ fontSize: isMobile ? '3vw' : null }}>Software Engineer (June 2018 - September 2018)</Typography>
+              </Box>
+
+              <Box style={{ paddingLeft: isMobile ? '10%' : '40px', paddingBottom: '40px', textAlign: 'left' }}>
+                <Typography variant="h6" style={{ fontSize: isMobile ? '3vw' : null }}>TextRecruit, San Jose, CA</Typography>
+                <Typography variant="subtitle1" style={{ fontSize: isMobile ? '3vw' : null }}>AI Engineer (August 2017 - September 2018)</Typography>
               </Box>
             </Box>
           </Box>
@@ -228,89 +211,93 @@ const LandingPage = () => {
       </Box>
 
 
-      {/* Projects */}
-      <ProjectContainer id="projects">
-        <Typography variant="h4" component="h2" marginBottom="32px">Projects</Typography>
-        <Grid container spacing={4}>
-          {projects.map((project, index) => (
-            <Grid item xs={12} md={6} key={index}>
-              <Paper elevation={2} sx={{ padding: '16px' }}>
-                <ProjectTitle variant="h6">
-                  {project.name}
-                </ProjectTitle>
-                <ProjectLink sx={{color: 'black'}} href={project.url} target="_blank" rel="noopener noreferrer">
-                  View Project
-                </ProjectLink>
-                <Box mt={2}>
-                  {project.techStack.map((tech, idx) => (
-                    <TechChip
-                      key={idx}
-                      icon={tech.icon}
-                      label={tech.label}
-                    />
-                  ))}
-                </Box>
-              </Paper>
-            </Grid>
-          ))}
-        </Grid>
-      </ProjectContainer>
-
       <Box
-      sx={{
-        minHeight: '10vh',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'flex-start',
-        backgroundColor: theme.palette.grey[200],
-        padding: theme.spacing(isMobile ? 4 : 8),
-      }}
-    >
-      <Typography variant="h4" gutterBottom sx={{textAlign: "center",  width: '100%'}}>
-        Recent Reads
-      </Typography>
-      <List>
-        {['A Random Walk Down Wall Street - Burton Malkiel', 
-          'Reinventing banking and finance - Helene Panzarino & Alessandro Hatami', 
-          'The Future of Money - Eswar Prasad', 
-          'The Changing World Order - Ray Dalio',
-          'Sapiens - Yuval Noah Harari',
-          'Capital - Thomas Piketty'
-        ].map((text, index) => (
-            <ListItem key={index} disableGutters>
-              <Typography variant="body1">{text}</Typography>
+        sx={{
+          minHeight: '10vh',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'flex-start',
+          backgroundColor: "white",
+          padding: theme.spacing(isMobile ? 4 : 8),
+        }}
+      >
+        <Typography variant="h4" gutterBottom sx={{ fontWeight: 'bold', }}>
+          Projects
+        </Typography>
+        <List>
+          {[
+            {
+              name: 'Advocate AI',
+              description: 'Helps college students and young professionals understand and navigate the legal world. Went through Founder University Cohort 7.',
+              techStack: 'Vercel, React, Spring Boot (Django for v0), AWS, Mistral & GPT',
+              link: 'https://www.advocateai.xyz/', // Replace with actual link to project
+            },
+            {
+              name: 'Vent AI - Being Built',
+              description: 'A digital person to help solve the loniliness pandemic.',
+              techStack: 'Vercel, Next.js, Tailwind, Spring Boot, AWS, GPT (LLMs), Elevan Labs',
+              link: '/', // Replace with actual link to project
+            },
+            {
+              name: 'R.A. Scheuring',
+              description: 'Built a portfolio website for an Author. Updated her website to use the latest technologies and best practices.',
+              techStack: 'Vercel, Next.js, Tailwind, Mailchimp',
+              link: 'https://rascheuring.vercel.app/', // Replace with actual link to project
+            },
+            {
+              name: 'The Baller Society',
+              description: 'Built technology to connect physical items to digital databases.',
+              techStack: 'Vercel, React, Solana, NFTs, NFCs',
+              link: 'https://twitter.com/BallerSociety_', // Replace with actual link to project
+            },
+            // Add other projects here in similar structure
+          ].map((project, index) => (
+            <ListItem key={index} disableGutters sx={{ marginBottom: theme.spacing(2) }}>
+              <Box>
+                <Link href={project.link} target="_blank" rel="noopener" sx={{ textDecoration: 'none' }}>
+                  <Typography variant="body1" component="span" sx={{ fontWeight: 'bold' }}>
+                    {project.name}
+                  </Typography>
+                </Link>
+                <Typography variant="body2" component="div" sx={{ marginTop: theme.spacing(1) }}>
+                  {project.description}
+                </Typography>
+                <Typography variant="body2" component="div" sx={{ marginTop: theme.spacing(1), fontStyle: 'italic' }}>
+                  Tech Stack: {project.techStack}
+                </Typography>
+              </Box>
             </ListItem>
-        ))}
-      </List>
-    </Box>
+          ))}
+        </List>
+      </Box>
+
 
       <Box
         sx={{
+          minHeight: '10vh',
           display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          padding: '10px 3%', // Increased padding from the sides
-          backgroundColor: '#f5f5f5',
-          position: 'static',
-          bottom: 0,
-          left: 0,
-          right: 0,
+          flexDirection: 'column',
+          alignItems: 'flex-start',
+          backgroundColor: "#EEEEEE",
+          padding: theme.spacing(isMobile ? 4 : 8),
         }}
       >
-        <Typography variant="body2" color="textSecondary">
-          &copy; {new Date().getFullYear()} Jack Retterer
-      </Typography>
-        <Box>
-          <IconButton color="inherit" href="https://twitter.com/jaretterer" target="_blank" sx={{ '&:hover': { backgroundColor: 'transparent', opacity: 1 } }}>
-            <FontAwesomeIcon icon={faTwitter} style={{ color: 'black' }} />
-          </IconButton>
-          <IconButton color="inherit" href="https://www.linkedin.com/in/jackretterer/" target="_blank" sx={{ '&:hover': { backgroundColor: 'transparent', opacity: 1 } }}>
-            <FontAwesomeIcon icon={faLinkedin} style={{ color: 'black' }} />
-          </IconButton>
-          <IconButton href="https://github.com/jackretterer" target="_blank">
-            <FontAwesomeIcon icon={faGithub} style={{ color: 'black' }}/>
-          </IconButton>
-        </Box>
+        <Typography variant="h4" gutterBottom sx={{ textAlign: "center", fontWeight: 'bold', width: '100%' }}>
+          Recent Reads
+        </Typography>
+        <List>
+          {['A Random Walk Down Wall Street - Burton Malkiel',
+            'Reinventing banking and finance - Helene Panzarino & Alessandro Hatami',
+            'The Future of Money - Eswar Prasad',
+            'The Changing World Order - Ray Dalio',
+            'Sapiens - Yuval Noah Harari',
+            'Capital - Thomas Piketty'
+          ].map((text, index) => (
+            <ListItem key={index} disableGutters>
+              <Typography variant="body1">{text}</Typography>
+            </ListItem>
+          ))}
+        </List>
       </Box>
 
     </div>

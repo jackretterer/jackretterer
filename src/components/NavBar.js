@@ -71,7 +71,7 @@ const NavBar = () => {
           alignItems: 'center' // Align children vertically
         }}>
             <img src={logo} alt="Logo" style={{ height: '40px' }} />
-          <Typography sx={{paddingLeft: "3px"}}> Jack Retterer</Typography>
+          <Typography sx={{paddingLeft: "3px", fontWeight: 'bold'}}> Jack Retterer</Typography>
         </StyledTypography>
         { isMobile ? 
         <IconButton
@@ -85,9 +85,9 @@ const NavBar = () => {
         : null }
         { isMobile ? null :
         <div sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center' }}>
-          <Button color="inherit" href="#about" sx={{ color: 'black', textDecoration: 'none', textTransform: 'none' }}>About</Button>
-          <Button color="inherit" href="#experience" sx={{ color: 'black', textDecoration: 'none', textTransform: 'none' }}>Experience</Button>
-          <Button color="inherit" href="#projects" sx={{ color: 'black', textDecoration: 'none', textTransform: 'none' }}>Projects</Button>
+          <Button color="inherit" href="#about" sx={{ color: 'black', fontWeight: 'bold', textDecoration: 'none', textTransform: 'none' }}>About</Button>
+          <Button color="inherit" href="#experience" sx={{ color: 'black', fontWeight: 'bold', textDecoration: 'none', textTransform: 'none' }}>Experience</Button>
+          <Button color="inherit" href="#projects" sx={{ color: 'black', fontWeight: 'bold', textDecoration: 'none', textTransform: 'none' }}>Projects</Button>
           <StyledIconButton href="https://twitter.com/jaretterer" target="_blank">
             <FontAwesomeIcon icon={faTwitter} />
           </StyledIconButton>
